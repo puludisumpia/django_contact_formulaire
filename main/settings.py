@@ -12,6 +12,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # Il faut créer les fichiers conf avec la clé a hier dans le système
+# Exemple du path /Users/mp/Documents/config/secret1.conf mais il faut le changer
 with open("/Users/mp/Documents/config/secret1.conf", "r") as c:
     a = c.read()
 
@@ -75,6 +76,7 @@ WSGI_APPLICATION = 'main.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 # Il faut créer les fichiers conf avec la clé a hier dans le système
+# Exemple du path /Users/mp/Documents/config/secret1.conf mais il faut le changer
 
 DATABASES = {
     'default': {
