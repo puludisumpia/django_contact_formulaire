@@ -73,7 +73,7 @@ WSGI_APPLICATION = 'main.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
         "OPTIONS": {
             "read_default_file": "/Users/mp/Documents/config/secret2.conf"
         }
