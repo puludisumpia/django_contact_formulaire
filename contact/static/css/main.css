@@ -1,8 +1,55 @@
-i {
-    font-size: 30px;
-    margin-right: 7px;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.note {
-    max-width: 800px;
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #121c42;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    background-color: #f7fafb;
+    border-top: 1px solid #d8e5ed;
+    border-bottom: solid #d8e5ed;
+    padding: 40px 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h4 {
+    font-weight: bold;
+}
+hr {
+    border-color: #d8e5ed;
+}
+
+i {
+    font-size: 28px;
+    margin-right: 10px;
+    color: #6682f1;
+}
+
+#id_name, #id_email, #id_continent, #id_sexe, #id_age, #id_content, #id_approuve {
+    border: 1px solid #d8e5ed;
+    background-color: #f7fafb;
+}
+
+.btn {
+    background-color: #6682f1;
+    font-weight: bold;
 }

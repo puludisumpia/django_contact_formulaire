@@ -1,13 +1,15 @@
 from django.db import models
 
 class Contact(models.Model):
-    """
-        Création de la table contact_contact dans la base de données
-    """
-    name = models.CharField("votre nom".upper(), max_length=100)
-    email = models.EmailField("votre mail".upper(), max_length=100)
-    content = models.TextField("votre message".upper())
+    name = models.CharField(max_length=100)
+    email = models.EmailField(max_length=100)
+    continent = models.CharField(max_length=100)
+    sexe = models.CharField(max_length=100)
+    age = models.CharField(max_length=100)
+    content = models.TextField()
+    approuve = models.BooleanField(default=False)
     date = models.DateTimeField(auto_now_add=True)
+
 
     def __str__(self):
         return self.name
