@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # Exemple du path /Users/mp/Documents/config/secret1.conf mais il faut le changer
-with open("/Users/mp/Documents/config/secret1.conf", "r") as c:
+with open("/Users/mp/Documents/config/secret_key.conf", "r") as c:
     a = c.read()
 SECRET_KEY = a
 
@@ -73,9 +73,9 @@ WSGI_APPLICATION = 'main.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
         "OPTIONS": {
-            "read_default_file": "/Users/mp/Documents/config/secret2.conf"
+            "read_default_file": "/Users/mp/Documents/config/config_data.conf"
         }
     }
 }
@@ -142,5 +142,5 @@ EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = "votre_email@gmail.com"
-EMAIL_HOST_PASSWORD = "votre_mot_passe_gmail"
+EMAIL_HOST_USER = "votre_mail@gmail.com"
+EMAIL_HOST_PASSWORD = "votre_mot_de_passe"
